@@ -3343,7 +3343,7 @@ module ThriftHiveMetastore
     ROLE = 1
 
     FIELDS = {
-      ROLE => {:type => ::Thrift::Types::STRUCT, :name => 'role', :class => ::Role}
+      ROLE => {:type => ::Thrift::Types::STRUCT, :name => 'role', :class => ::RbHiveRole}
     }
 
     def struct_fields; FIELDS; end
@@ -3557,7 +3557,7 @@ module ThriftHiveMetastore
     O1 = 1
 
     FIELDS = {
-      SUCCESS => {:type => ::Thrift::Types::LIST, :name => 'success', :element => {:type => ::Thrift::Types::STRUCT, :class => ::Role}},
+      SUCCESS => {:type => ::Thrift::Types::LIST, :name => 'success', :element => {:type => ::Thrift::Types::STRUCT, :class => ::RbHiveRole}},
       O1 => {:type => ::Thrift::Types::STRUCT, :name => 'o1', :class => ::MetaException}
     }
 

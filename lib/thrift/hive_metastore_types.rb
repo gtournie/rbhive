@@ -201,7 +201,7 @@ class PrincipalPrivilegeSet
   ::Thrift::Struct.generate_accessors self
 end
 
-class Role
+class RbHiveRole
   include ::Thrift::Struct, ::Thrift::Struct_Union
   ROLENAME = 1
   CREATETIME = 2
